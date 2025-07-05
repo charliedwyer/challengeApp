@@ -15,8 +15,12 @@ This project is a **RESTful API** built with **Spring Boot** that allows users t
 - **Spring Boot 3.x**
 - **Spring Web (Spring MVC)**
 
-- ## 🛣️ API Endpoints
+## 🛣️ API Endpoints
 
-### Get all challenges
-```http
-GET /api/challenges
+| Method | Endpoint               | Description          |
+|---------|------------------------|----------------------|
+| GET     | `/api/challenges`      | Get all challenges  |
+| GET     | `/api/challenges/{month}` | Get challenge by month |
+| POST    | `/api/challenges`      | Create a new challenge |
+| PUT     | `/api/challenges/{id}` | Update a challenge  |
+| DELETE  | `/api/challenges/{id}` | Delete a challenge  |
